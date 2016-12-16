@@ -93,5 +93,39 @@ nmap ,j :wincmd j<CR>
 nmap ,h :wincmd h<CR>
 nmap ,l :wincmd l<CR>
 
+" 取消高亮显示
+nmap ,nh :nohl<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Taglist 配置
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let Tlist_Show_One_File=1
+let Tlist_OnlyWindow=1
+let Tlist_Use_Right_Window=0
+let Tlist_Sort_Type='name'
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Show_Menu=1
+let Tlist_Max_Submenu_Items=10
+let Tlist_Max_Tag_length=20
+let Tlist_Use_SingleClick=0
+let Tlist_Auto_Open=0
+let Tlist_Close_On_Select=0
+let Tlist_File_Fold_Auto_Close=1
+let Tlist_GainFocus_On_ToggleOpen=0
+let Tlist_Process_File_Always=1
+let Tlist_WinHeight=10
+let Tlist_WinWidth=18
+let Tlist_Use_Horiz_Window=0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Powerline 配置
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap wm :WMToggle<CR>
 let g:winManagerWindowLayout="FileExplorer,BufExplorer|TagList"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Powerline 配置
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set encoding=utf-8
+set t_Co=256
+let g:Powerline_colorscheme='solarized256'

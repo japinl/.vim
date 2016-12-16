@@ -1,6 +1,15 @@
 我的 VIM 配置
 =============
 
+说明
+----
+
+1. 下载配置文件到本地电脑：
+ - 使用`git`下载到用户主目录`cd ~ && git clone https://github.com/japinl/.vim.git`。
+ - 使用`Download ZIP`下载压缩文件，并解压到用户主目录。
+2. 进入`.vim`目录运行`install.sh`脚步进行安装。
+
+
 自定义快捷键
 ------------
 

@@ -1,4 +1,31 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 插件管理配置
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" 利用 Vundle 管理自身
+Plugin 'VundleVim/Vundle.vim'
+
+" 窗口管理器
+Plugin 'vim-scripts/winmanager'
+
+Plugin 'vim-scripts/taglist.vim'
+
+" 状态栏
+Plugin 'Lokaltog/vim-powerline'
+
+call vundle#end()
+
+filetype plugin indent on
+
+filetype on
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 基本配置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -65,3 +92,6 @@ nmap ,k :wincmd k<CR>
 nmap ,j :wincmd j<CR>
 nmap ,h :wincmd h<CR>
 nmap ,l :wincmd l<CR>
+
+nmap wm :WMToggle<CR>
+let g:winManagerWindowLayout="FileExplorer,BufExplorer|TagList"

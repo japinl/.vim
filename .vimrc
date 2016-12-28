@@ -18,6 +18,9 @@ Plugin 'vim-scripts/taglist.vim'
 " 状态栏
 Plugin 'Lokaltog/vim-powerline'
 
+" Nerdtree
+Plugin 'scrooloose/nerdtree'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -129,3 +132,13 @@ let g:winManagerWindowLayout="FileExplorer,BufExplorer|TagList"
 set encoding=utf-8
 set t_Co=256
 let g:Powerline_colorscheme='solarized256'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Nerdtree 配置
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let NERDTreeShowBookmarsk=1
+let NERDTreeWinSize=25
+let NERDTreeHighlightCursorline=0
+
+nmap wn :NERDTree<CR>

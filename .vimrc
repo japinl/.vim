@@ -21,6 +21,8 @@ Plugin 'Lokaltog/vim-powerline'
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'vim-scripts/a.vim'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -142,3 +144,11 @@ let NERDTreeWinSize=25
 let NERDTreeHighlightCursorline=0
 
 nmap wn :NERDTree<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" a.vim 配置
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nmap th :A<CR>
+nmap thv :AV<CR>
+nmap ths :AS<CR>

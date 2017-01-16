@@ -52,7 +52,10 @@ function install_vimrc()
             mv ${HOME}/${vimrc} ${HOME}/vimrc.bak && ln -s ${new_vimrc} ${HOME}/${vimrc}
             return $?
         fi        
-    fi
+    else
+        ln -s ${new_vimrc} ${HOME}/${vimrc}
+        return $?
+    fi    
     return 1
 }
 

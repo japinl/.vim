@@ -1,40 +1,28 @@
-我的 VIM 配置
-=============
+Vulture
+=======
 
-说明
-----
+Vulture - My personal vim configuration files.
 
-1. 下载配置文件到本地电脑：
- - 使用`git`下载到用户主目录`cd ~ && git clone https://github.com/japinl/.vim.git`。
- - 使用`Download ZIP`下载压缩文件，并解压到用户主目录。
-2. 进入`.vim`目录运行`install.sh`脚步进行安装。
-
-
-自定义快捷键
+Installation
 ------------
 
-**Normal 模式**
+Requirements:
 
-| 键       | 说明                              |
-|----------|-----------------------------------|
-| F2       | 水平分割当前窗口并载入编辑配置文件|
-| ,3       | 水平分割当前窗口                  |
-| ,4       | 垂直分割当前窗口                  |
-| ,k       | 将光标移动到当前窗口的上方窗口    |
-| ,j       | 将光标移动到当前窗口的下方窗口    |
-| ,h       | 将光标移动到当前窗口的左边窗口    |
-| ,l       | 将光标移动到当前窗口的右边窗口    |
-| wn       | 显示文件信息                      |
-| th       | C/C++头文件和源文件之间跳转       |
-| ths      | 水平切割窗口并小时头文件或源文件  |
-| thv      | 垂直切割窗口并小时头文件或源文件  |
+* vim `>= 7.4`
 
-常用键记录
-----------
+To install, run the following from your terminal: (you may want to backup
+your existing `.vimrc` and `.vim` first)
 
-**Normal 模式**
+``` shell
+$ cd && git clone https://github.com/japinl/vulture.git .vim
+$ .vim/install.sh
+```
 
-| 键       | 说明                              |
-|----------|-----------------------------------|
-| :%!xxd   | 十六进制显示                      |
-| :%!xxd -r| 进入十六进制显示后，返回          |
+When you add a new vim plugin in `.vim/vimrc`, you can use
+
+```
+$ vim +PluginInstall +qall
+```
+
+to install the new plugin, or you can just use `PluginInstall` in vim under
+command mode to install the new plugin.

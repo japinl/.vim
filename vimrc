@@ -25,7 +25,8 @@ call vundle#end()
 filetype plugin indent on
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" " Basic settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Basic settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " show line number
@@ -43,8 +44,19 @@ set ignorecase
 " do not auto-back
 set nobackup
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Editorconfig settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " no max line length indicator will be shown
 let g:EditorConfig_max_line_indicator = "none"
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim-markdown settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " disable the folding configuration for vim markdown
 let g:vim_markdown_folding_disabled = 1
+
+" enable LaTeX math
+let g:vim_markdown_math = 1

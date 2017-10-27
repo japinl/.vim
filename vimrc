@@ -19,6 +19,15 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+" vim instant markdown
+Plugin 'suan/vim-instant-markdown'
+
+" YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
+
+" vim powerline
+Plugin 'Lokaltog/vim-powerline'
+
 " all of plugins must be added before the following line
 call vundle#end()
 
@@ -44,12 +53,17 @@ set ignorecase
 " do not auto-back
 set nobackup
 
+" status line
+set laststatus=2
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editorconfig settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " no max line length indicator will be shown
 let g:EditorConfig_max_line_indicator = "none"
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-markdown settings
@@ -60,3 +74,16 @@ let g:vim_markdown_folding_disabled = 1
 
 " enable LaTeX math
 let g:vim_markdown_math = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim-markdown-preview settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" vim markdown preview
+let vim_markdown_preview_github = 1
+
+let vim_markdown_preview_toggle=3
+
+" use google chrome
+let vim_markdown_preview_browser='Google Chrome'

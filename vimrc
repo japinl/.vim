@@ -28,6 +28,9 @@ Plugin 'Valloric/YouCompleteMe'
 " vim powerline
 Plugin 'Lokaltog/vim-powerline'
 
+" gtags
+Plugin 'vim-scripts/gtags.vim'
+
 " all of plugins must be added before the following line
 call vundle#end()
 
@@ -55,6 +58,14 @@ set nobackup
 
 " status line
 set laststatus=2
+
+" Window management
+nmap ,V :sp<CR>
+nmap ,v :vsp<CR>
+nmap ,k :wincmd k<CR>
+nmap ,j :wincmd j<CR>
+nmap ,h :wincmd h<CR>
+nmap ,l :wincmd l<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

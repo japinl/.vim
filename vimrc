@@ -69,6 +69,7 @@ nmap ,k :wincmd k<CR>
 nmap ,j :wincmd j<CR>
 nmap ,h :wincmd h<CR>
 nmap ,l :wincmd l<CR>
+nmap ,c :close<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -101,6 +102,7 @@ let vim_markdown_preview_toggle=3
 
 " use google chrome
 let vim_markdown_preview_browser='Google Chrome'
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree settings

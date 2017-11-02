@@ -31,6 +31,9 @@ Plugin 'Lokaltog/vim-powerline'
 " gtags
 Plugin 'vim-scripts/gtags.vim'
 
+" NeoTree file explorer
+Plugin 'scrooloose/nerdtree'
+
 " all of plugins must be added before the following line
 call vundle#end()
 
@@ -98,3 +101,9 @@ let vim_markdown_preview_toggle=3
 
 " use google chrome
 let vim_markdown_preview_browser='Google Chrome'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nmap wm :NERDTreeToggle<CR>
